@@ -81,7 +81,7 @@ CMDS_BASH = [
     )
 ]
 
-USE_BASH = False
+USE_BASH = True
 
 def run_commands():
     CMDS = CMDS_BASH if USE_BASH else CMDS_CMD
@@ -100,5 +100,5 @@ def wait_until(hour: int, minute: int = 0):
     time.sleep(wait_seconds)
 
 if __name__ == "__main__":
-    wait_until(16, 25)
+    wait_until(17, 00)
     run_commands()

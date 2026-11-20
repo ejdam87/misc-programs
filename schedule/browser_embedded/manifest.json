@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "FB naplánované odoslanie",
+  "version": "1.0",
+  "description": "V naplánovanom čase odošle už napísanú správu na Facebooku/Messengeri.",
+  "permissions": ["scripting", "alarms", "storage", "tabs"],
+  "host_permissions": ["https://www.facebook.com/*", "https://www.messenger.com/*"],
+  "action": { "default_popup": "popup.html" },
+  "background": { "service_worker": "bg.js" }
+}
